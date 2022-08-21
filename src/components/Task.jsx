@@ -11,6 +11,10 @@ const Task = ({ task, handleTaskClick }) => {
             <div className='task-title'>
                 {task.title}
             </div>
+
+            <div className='buttons-container'>
+                <button className='remove-task-button'>X</button>
+            </div>
         </div>
     )
 }
