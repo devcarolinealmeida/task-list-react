@@ -1,4 +1,4 @@
-# Task-list App using React JS
+# [Task-list App using React JS](https://dev-caroline-tasklist-react.netlify.app/)
 
 :pushpin: This project was my first React App 
 
@@ -20,5 +20,23 @@
 # My challenges with this project:
 - I chose to make a task-list as a project because I already made one of these using JavaScrip and I would like to get to know the differences of a React App with the same functionalities.
 
+# What I've learned:
+- props to pass data from a parent component to a child component
+- consuming data from an API
+- useEffect to executes a block of code whenever a variable changes. In this case, to consume API data when website loads
+```
+  useEffect(() => {
+      const fetchTasks = async () => {
+      const {data} = await axios.get("https://jsonplaceholder.cypress.io/todos?_limit=10")
+      setTasks(data)
+    }
+    fetchTasks()
+  }, [])
+ 
+```
+
 # Link
-https://dev-caroline-tasklist-react.netlify.app/
+- Live Site URL: https://dev-caroline-tasklist-react.netlify.app/
+
+
+> This project was based on a video lesson from Felipe Rocha
